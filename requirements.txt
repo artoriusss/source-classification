@@ -5,3 +5,5 @@ fasttext
 emoji
 beautifulsoup4
 nltk
+pickle
+scipy
