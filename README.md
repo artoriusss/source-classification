@@ -38,3 +38,17 @@ To run soft preprocessing, type the commment.
 python -m Preprocessor.script --light
 ```
 For hard preprocessing, use a flag `--hard`. 
+
+## Models
+We trained and experimented with a number of different models. Classical ML models: Random Forests classifier. Large Language Models: fine-tuned XLM-Roberta-base. All of the pickled classical models are accessible from ```/models``` directory. 
+
+Fine-tuned Roberta can be download with the following script:
+
+```
+import kagglehub
+
+# Download the latest version of the model to the models/ directory
+path = kagglehub.model_download("artoriusss/roberta-text-classify/pyTorch/roberta", path='models')
+
+print("Path to model files:", path)
+```

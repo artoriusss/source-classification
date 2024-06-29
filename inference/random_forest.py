@@ -51,5 +51,4 @@ def create_submission(df, numerical_predictions, filename='submission'):
     majority_categories.to_csv(f'{filename}.csv', index=False)
 
 create_submission(test_df, y_test_pred, filename='submission')
-
 print("Inference completed and submission file created.")
