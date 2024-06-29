@@ -31,4 +31,11 @@ pip install -r requirements.txt
 ```
 
 ## Preprocessing
-Within this project you can choose two preprocessing methods: light/soft or hard. Hard preprocessing is usually a good practise for classical ML methods, since it lowercases the text and removes more elements that are not easily handled by these models, such as: emojis, hashtags, mentions, urls, etc. 
+Within this project you can choose two preprocessing methods: light/soft or hard. Hard preprocessing is usually a good practise for classical ML methods, since it lowercases the text and removes more elements that are not easily handled by these models, such as: emojis, hashtags, mentions, urls, etc. Light preprocessing is usually applied to larger models, such a BERT, RoBERTa, etc.
+
+To run soft preprocessing, type the commment.
+```
+python -m Preprocessor.script --light
+```
+For hard preprocessing, use a flag `--hard`. 
+
