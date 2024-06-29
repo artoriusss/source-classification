@@ -1,0 +1,7 @@
+pandas
+tqdm
+scikit-learn
+fasttext
+emoji
+beautifulsoup4
+nltk
